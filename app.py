@@ -20,7 +20,7 @@ demo = gr.Interface(
         gr.Slider(1.0, 8.0, value=3.8, label="Petal Length (cm)"),
         gr.Slider(1.0, 3.0, value=1.5, label="Petal Width (cm)")
     ], 
-    outputs=gr.label(num_top_classes=3, label="Prediction"), 
+    outputs=gr.Label(num_top_classes=2, label="Prediction"), 
     title="Iris Flower Classifier",
     description="Adjust the sliers and the model predicts the iris species, Built Gradio on Docker, and deployed Hugging Face Spaces"
 
